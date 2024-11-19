@@ -1,1 +1,67 @@
-Projeto da Disciplina composta pelos participantes: Arthur, Beatriz, ?, Lucas Ariel, Sabrina.
+# TCC Manager:
+
+O curso de Ciência da Computação da UFCG precisa de um sistema para facilitar a definição de temas e orientações de TCC a partir de interesses comuns entre docentes e discentes. O sistema TCC Match tem o objetivo de permitir que alunos busquem e sugiram temas, encontrem professores dispostos a orientar em áreas específicas, de forma a facilitar o processo de orientação nas disciplinas de Pré-TCC e TCC, tanto para alunos e professores quanto para a coordenação.
+
+### Etapa 1
+
+**US1.** Eu, como coordenador e administrador, gostaria de cadastrar um aluno do curso de Ciência da Computação, informando nome completo, matrícula, email e período previsto para a conclusão do curso. 
+O sistema deve ter um usuário administrador padrão para realizar o gerenciamento
+
+**US2.** Eu, como coordenador e administrador, gostaria de acessar, atualizar ou remover o cadastro de um aluno do curso. Para tal, o aluno deve estar cadastrado no sistema. 
+
+**US3.** Eu, como coordenador e administrador, gostaria de cadastrar um professor do curso de Ciência da Computação no sistema, informando nome completo, email e laboratórios do qual faz parte.
+
+**US4.** Eu, como coordenador e administrador, gostaria de acessar, atualizar ou remover o cadastro de um professor do curso. Para tal, o professor deve estar cadastrado no sistema. 
+
+**US5.** Eu, como coordenador e administrador, gostaria de cadastrar áreas de estudo em Ciência da Computação (e.g., engenharia de software, banco de dados, etc.) disponíveis para o desenvolvimento de TCCs.
+
+**US6.** Eu, como coordenador e administrador, gostaria de acessar, atualizar ou remover o cadastro de uma área de estudo disponível. Para tal, a área de estudo deve estar cadastrada no sistema. 
+
+### Etapa 2
+
+**US7.** Eu, como aluno, gostaria de informar as áreas de estudo, em Ciência da Computação, que tenho interesse em realizar meu TCC.
+
+**US8.** Eu, como aluno, gostaria de listar professores, com seus respectivos contatos, que tenham interesse e disponibilidade (quota) para orientar temas de TCC nas minhas áreas de interesse. 
+
+**US9.** Eu, como aluno, gostaria de cadastrar uma proposta de tema de TCC, informando título, descrição e áreas de estudo relacionadas. O tema de TCC fica com um status NOVO quando é criado.
+
+**US10.** Eu, como aluno, gostaria de listar temas de TCC cadastrados pelos professores do curso, com informações de título, áreas de conhecimento e professor responsável.
+
+**US11.** Eu, como aluno, gostaria de solicitar a um professor a orientação em um tema de TCC cadastrado por mim. Após a solicitação de orientação o tema de TCC passa para o status PENDENTE
+
+**US12.** Eu, como aluno, gostaria de solicitar orientação em um tema de TCC cadastrado por um professor. O tema de TCC continua com status NOVO enquanto a solicitação não é analisada.
+
+**US13.** Eu, como aluno, gostaria de ser notificado por e-mail caso um novo tema de TCC nas minhas áreas de interesse seja cadastrado por um professor. A notificação deve ser representada como uma mensagem no terminal da aplicação (print), indicando o motivo e quem está recebendo a notificação.
+
+### Etapa 3
+
+**US14.** Eu, como professor, gostaria de informar as áreas de estudo, em Ciência da Computação, que tenho interesse em orientar temas de TCC.
+
+**US15.** Eu, como professor, gostaria de configurar / atualizar minha disponibilidade para orientação de alunos no TCC (quota). A quota de orientação disponível é impactada pela alocação de temas para orientação.
+
+**US16.** Eu, como professor, gostaria de cadastrar um tema de TCC, informando título, descrição e áreas de estudo relacionadas. O tema de TCC fica com um status NOVO quando é criado
+
+**US17.** Eu, como professor, gostaria de listar os temas de TCC que eu cadastrei no sistema, com informações de título e áreas de conhecimento relacionadas. 
+
+**US18.** Eu, como professor, gostaria de listar os temas de TCC cadastrados pelos alunos, com informações de título e áreas de conhecimento relacionadas.
+
+### Etapa 4
+
+**US19.** Eu, como professor, gostaria de ser notificado por email caso um aluno solicite orientação em um tema de TCC.
+          * A notificação deve ser representada como uma mensagem no terminal da aplicação (print), indicando o motivo e quem está recebendo a notificação.
+          
+**US20.** Eu, como professor, gostaria de poder listar solicitações de alunos para a orientação de temas de TCC cadastrados por mim.
+
+**US21.** Eu, como professor, gostaria de poder aprovar ou negar uma solicitação de aluno para a orientação de um tema de TCC cadastrado por mim. A resposta a solicitação deve ser obrigatoriamente acompanhada de uma mensagem.
+* A notificação deve ser representada como uma mensagem no terminal da aplicação (print), indicando o motivo e quem está recebendo a notificação.
+* Caso a solicitação seja aprovada o tema de TCC passa do status NOVO para o status ALOCADO e uma notificação deve ser enviada para o coordenador.
+* Caso a solicitação seja negada o tema de TCC continua com o status NOVO.
+          
+**US22.** Eu, como professor, gostaria de poder aprovar ou negar uma solicitação de aluno para a orientação de um tema de TCC cadastrado pelo aluno. A resposta a solicitação deve ser obrigatoriamente acompanhada de uma mensagem.
+- A notificação deve ser representada como uma mensagem no terminal da aplicação (print), indicando o motivo e quem está recebendo a notificação.
+- Caso a solicitação seja aprovada o tema de TCC passa do status PENDENTE para o status ALOCADO e uma notificação deve ser enviada para o coordenador. 
+- Caso a solicitação seja negada o tema de TCC passa do status PENDENTE para o status NOVO. 
+          
+**US23.** Eu, como coordenador e administrador, gostaria de gerar um relatório com as informações sobre as orientações de TCC em curso (alocação aluno-orientador, tema e área de pesquisa) e alunos que não estão alocados a um orientador.
+- O relatório deve ser representado como uma mensagem no terminal da aplicação (print). 
+
